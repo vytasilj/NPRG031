@@ -32,8 +32,10 @@ namespace FirstExample
             PrintSeparator();
 
             #endregion
-            
-            Console.WriteLine(DecimulToBinary(8));
+
+            int number = 8;
+            Console.WriteLine(DecimalToBinary(number));
+            Console.WriteLine(DecimalToBinaryForCycle(number));
 
             // Čtení s příkazové řádky.
             // Zde je kvůli tomu, aby se nezavřela konzole po skončení programu.
@@ -125,7 +127,7 @@ namespace FirstExample
             } while (false);
         }
 
-        private static string DecimulToBinary(int number)
+        private static string DecimalToBinary(int number)
         {
             // prázdný string
             string result = "";
@@ -134,6 +136,20 @@ namespace FirstExample
             {
                 result = result.Insert(0, (number%2).ToString());
                 number /= 2;
+            }
+
+            // vrácení hodnoty z metody
+            return result;
+        }
+
+        private static string DecimalToBinaryForCycle(int number)
+        {
+            // prázdný string
+            string result = "";
+
+            for (; number > 0; number /= 2)
+            {
+                result = result.Insert(0, (number % 2).ToString());
             }
 
             // vrácení hodnoty z metody
