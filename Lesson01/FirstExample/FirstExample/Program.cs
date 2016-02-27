@@ -32,7 +32,8 @@ namespace FirstExample
             PrintSeparator();
 
             #endregion
-
+            
+            Console.WriteLine(DecimulToBinary(8));
 
             // Čtení s příkazové řádky.
             // Zde je kvůli tomu, aby se nezavřela konzole po skončení programu.
@@ -113,15 +114,35 @@ namespace FirstExample
         {
             while (false)
             {
+                // Tato část kódu nikdy neproběhne
                 Console.WriteLine("While cyklus");
             }
 
             do
             {
+                // Tato část kódu proběhne jednou
                 Console.WriteLine("Do-while cyklus");
             } while (false);
         }
 
+        private static string DecimulToBinary(int number)
+        {
+            // prázdný string
+            string result = "";
+
+            while (number != 0)
+            {
+                result = result.Insert(0, (number%2).ToString());
+                number /= 2;
+            }
+
+            // vrácení hodnoty z metody
+            return result;
+        }
+
+        /// <summary>
+        /// Metoda pro výpisu několika pomlček.
+        /// </summary>
         private static void PrintSeparator()
         {
             Console.WriteLine("------------------------");
