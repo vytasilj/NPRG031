@@ -1,0 +1,23 @@
+﻿Polymorfismus
+http://www.codeproject.com/Articles/602141/Polymorphism-in-NET
+https://msdn.microsoft.com/cs-cz/library/ms173152.aspx
+http://www.c-sharpcorner.com/UploadFile/puranindia/polymorphism-in-C-Sharp/
+
+Dědičnost
+http://www.codeproject.com/Articles/1445/Introduction-to-inheritance-polymorphism-in-C
+http://www.dotnetperls.com/inheritance
+http://www.tutorialspoint.com/csharp/csharp_inheritance.htm
+https://msdn.microsoft.com/en-us/library/ms173149.aspx
+http://csharp.net-tutorials.com/classes/inheritance/
+
+Formátovací řetězce
+Číslo
+https://msdn.microsoft.com/cs-cz/library/dwhawy9k(v=vs.110).aspx
+Čas
+https://msdn.microsoft.com/cs-cz/library/ee372286(v=vs.110).aspx
+Datum a čas
+https://msdn.microsoft.com/cs-cz/library/az4se3k1(v=vs.110).aspx
+
+Standardní psaní v C#
+http://www.dofactory.com/reference/csharp-coding-standards
+http://stackoverflow.com/questions/4678178/style-guide-for-c
