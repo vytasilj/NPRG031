@@ -21,3 +21,31 @@ https://msdn.microsoft.com/cs-cz/library/az4se3k1(v=vs.110).aspx
 Standardní psaní v C#
 http://www.dofactory.com/reference/csharp-coding-standards
 http://stackoverflow.com/questions/4678178/style-guide-for-c
+
+Modifikátory přístupu
+https://msdn.microsoft.com/en-us/library/wxh6fsc7.aspx
+
+Using (v levém menu jsou další užitečné informace)
+https://msdn.microsoft.com/en-us/library/yh598w02.aspx
+http://www.dotnetperls.com/using
+
+Sealed (v levém menu jsou další užitečné informace)
+https://msdn.microsoft.com/library/88c54tsw(v=vs.100).aspx
+
+Třída
+https://msdn.microsoft.com/en-us/library/0b0thckt.aspx
+
+Interface
+https://msdn.microsoft.com/en-us/library/87d83y5b.aspx
+
+Třída vs. Interface
+http://stackoverflow.com/questions/56867/interface-vs-base-class
+http://stackoverflow.com/questions/747517/interfaces-vs-abstract-classes
+https://msdn.microsoft.com/en-us/library/scsyfw1d(v=vs.71).aspx (starší článek)
+
+Abstract vs. virtual
+http://stackoverflow.com/questions/391483/what-is-the-difference-between-an-abstract-function-and-a-virtual-function
+
+Virtual, sealed, abstract
+https://msdn.microsoft.com/en-us/library/aa664453(v=vs.71).aspx (starší článek)
+https://msdn.microsoft.com/en-us/library/k535acbf(v=vs.71).aspx (starší článek)

@@ -46,6 +46,9 @@
     <Compile Include="AbstractInheritance\Rectangle.cs" />
     <Compile Include="AbstractInheritance\Shape.cs" />
     <Compile Include="AbstractInheritance\Triangle.cs" />
+    <Compile Include="ErrorInInheritance\BaseClass.cs" />
+    <Compile Include="ErrorInInheritance\MyClass.cs" />
+    <Compile Include="ExceptionInheritance\MyException.cs" />
     <Compile Include="InheritanceExample\Rectangle.cs" />
     <Compile Include="InheritanceExample\Shape.cs" />
     <Compile Include="InheritanceExample\Triangle.cs" />

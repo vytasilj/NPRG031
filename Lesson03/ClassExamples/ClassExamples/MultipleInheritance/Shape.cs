@@ -2,8 +2,8 @@
 {
     public abstract class Shape
     {
-        protected double _height;
-        protected double _width;
+        protected readonly double _height;
+        protected readonly double _width;
 
 
         protected Shape(double height, double width)

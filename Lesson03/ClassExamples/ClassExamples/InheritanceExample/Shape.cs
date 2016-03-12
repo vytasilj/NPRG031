@@ -4,8 +4,8 @@ namespace ClassExamples.InheritanceExample
 {
     public class Shape
     {
-        protected double _height;
-        protected double _width;
+        protected readonly double _height;
+        protected readonly double _width;
 
 
         public Shape(double height, double width)
@@ -15,6 +15,10 @@ namespace ClassExamples.InheritanceExample
         }
 
 
+        /// <summary>
+        /// Virtuální metoda => nemusí být přepsána v potomcích.
+        /// </summary>
+        /// <returns></returns>
         public virtual double GetArea()
         {
             throw new NotImplementedException();
