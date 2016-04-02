@@ -49,6 +49,7 @@
     <Compile Include="ITreeNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
