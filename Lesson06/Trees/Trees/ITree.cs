@@ -15,7 +15,7 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns>Vrátí nalezený prvek, nebo null.</returns>
-        ITreeNode<T> Find(T value);
+        ValueNode<T> Find(T value);
 
         /// <summary>
         /// Zjišťuje, zda je ve stromu daný prvek.
@@ -36,19 +36,19 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        bool Remove(ITreeNode<T> value);
+        bool Remove(ValueNode<T> value);
 
         /// <summary>
         /// Vrácení prvku s minimální hodnotou.
         /// </summary>
         /// <returns></returns>
-        ITreeNode<T> Min();
+        ValueNode<T> Min();
 
         /// <summary>
         /// Vrácení prvku s maximální hodnotou.
         /// </summary>
         /// <returns></returns>
-        ITreeNode<T> Max();
+        ValueNode<T> Max();
 
         /// <summary>
         /// Metoda, která nalezne prvek, který následuje po prvku se zadanou hodnotou,
@@ -56,7 +56,7 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ITreeNode<T> Succ(T value);
+        ValueNode<T> Succ(T value);
 
         /// <summary>
         /// Metoda, která nalezne prvek, který následuje po zadaném prvku,
@@ -64,7 +64,7 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ITreeNode<T> Succ(ITreeNode<T> value);
+        ValueNode<T> Succ(ValueNode<T> value);
 
         /// <summary>
         /// Metoda, která nalezne prvek, který předchází prvku se zadanou hodnotou,
@@ -72,7 +72,7 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ITreeNode<T> Predec(T value);
+        ValueNode<T> Predec(T value);
 
         /// <summary>
         /// Metoda, která nalezne prvek, který předchází zadanému prvku,
@@ -80,6 +80,6 @@ namespace Trees
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        ITreeNode<T> Predec(ITreeNode<T> value);
+        ValueNode<T> Predec(ValueNode<T> value);
     }
 }

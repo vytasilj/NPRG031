@@ -20,7 +20,7 @@ namespace Trees
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Find(T value)
+        public ValueNode<T> Find(T value)
         {
             throw new NotImplementedException();
         }
@@ -35,37 +35,37 @@ namespace Trees
             throw new NotImplementedException();
         }
 
-        public bool Remove(ITreeNode<T> value)
+        public bool Remove(ValueNode<T> value)
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Min()
+        public ValueNode<T> Min()
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Max()
+        public ValueNode<T> Max()
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Succ(T value)
+        public ValueNode<T> Succ(T value)
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Succ(ITreeNode<T> value)
+        public ValueNode<T> Succ(ValueNode<T> value)
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Predec(T value)
+        public ValueNode<T> Predec(T value)
         {
             throw new NotImplementedException();
         }
 
-        public ITreeNode<T> Predec(ITreeNode<T> value)
+        public ValueNode<T> Predec(ValueNode<T> value)
         {
             throw new NotImplementedException();
         }

@@ -6,7 +6,7 @@ namespace Trees
     /// Prvek stromu, který obsahuje hodnotu.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class ValueNode<T> : ITreeNode<T>
+    public class ValueNode<T> where T : IComparable
     {
         public T Value
         {
