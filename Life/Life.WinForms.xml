@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game of Life</name>
+    </assembly>
+    <members>
+        <member name="F:kiswa.Games.Life.WinFormsApp.FormAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.FormAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.FormAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:kiswa.Games.Life.WinFormsApp.ZoomType">
+            <summary>
+            Represents the type of zoom requested.
+            </summary>
+        </member>
+        <member name="T:kiswa.Games.Life.WinFormsApp.FormLife">
+            <summary>
+            Form to display a GoL simulation
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.FormLife.#ctor">
+            <summary>
+            Default ctor - Instantiates the form.
+            </summary>
+        </member>
+        <member name="F:kiswa.Games.Life.WinFormsApp.FormLife.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.FormLife.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.FormLife.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.WinFormsApp.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:kiswa.Games.Life.WinFormsApp.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.WinFormsApp.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.WinFormsApp.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

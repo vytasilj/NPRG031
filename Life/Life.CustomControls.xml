@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Life.CustomControls</name>
+    </assembly>
+    <members>
+        <member name="T:kiswa.Games.Life.CustomControls.LifeGrid">
+            <summary>
+            Grid control for displaying a LifeGame simulation.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.CellColorAlive">
+            <summary>
+            Gets or Sets the color of alive cells.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.CellColorDead">
+            <summary>
+            Gets or Sets the color of dead cells.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.Rows">
+            <summary>
+            Gets or Sets the number of rows in the grid.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.Columns">
+            <summary>
+            Gets or Sets the number of columns in the grid.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.LinesVisible">
+            <summary>
+            Gets or Sets whether grid lines are visible.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.CustomControls.LifeGrid.LinesSize">
+            <summary>
+            Gets or Sets the line thickness for grid lines.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.#ctor">
+            <summary>
+            Creates a LifeGrid with defaults of 100x100
+            for the grid size, black for alive cells and
+            white for dead cells.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a LifeGrid with the specified grid size
+            and default black for alive cells and white for dead cells.
+            </summary>
+            <param name="cols">Number of columns in the grid.</param>
+            <param name="rows">Number of rows in the grid.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.#ctor(System.Int32,System.Int32,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Creates a LifeGrid with the specified grid size
+            and cell alive and dead colors.
+            </summary>
+            <param name="cols">Number of columns in the grid.</param>
+            <param name="rows">Number of rows in the grid.</param>
+            <param name="aliveColor">Color for alive cells.</param>
+            <param name="deadColor">Color for dead cells.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.UpdateGrid(System.Boolean[])">
+            <summary>
+            Updates the display grid with the provided grid states.
+            </summary>
+            <param name="gridStates">Grid states to copy.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown if grid sizes do not match.</exception>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.createGrid">
+            <summary>
+            Called by Rows and Cols Properties when Set,
+            to update the control in design view.
+            </summary>
+        </member>
+        <member name="F:kiswa.Games.Life.CustomControls.LifeGrid.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.CustomControls.LifeGrid.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

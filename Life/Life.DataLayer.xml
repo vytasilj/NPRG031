@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Life.DataLayer</name>
+    </assembly>
+    <members>
+        <member name="T:kiswa.Games.Life.DataLayer.FileLoad">
+            <summary>
+            Provides access to files for loading
+            Game of Life patterns.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.FileLoad.IsFileLoaded">
+            <summary>
+            Gets whether a file is loaded.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.FileLoad.PatternDescription">
+            <summary>
+            Gets the description of the
+            last loaded Life pattern.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.FileLoad.LoadLifeFile(System.String,kiswa.Games.Life.DataLayer.LifeGame)">
+            <summary>
+            Opens the specified file and loads the pattern
+            into the provided <see cref="T:kiswa.Games.Life.DataLayer.LifeGame">LifeGame</see>.
+            </summary>
+            <param name="filePath"></param>
+            <param name="game"></param>
+        </member>
+        <member name="T:kiswa.Games.Life.DataLayer.FileSave">
+            <summary>
+            Provides access to files for saving
+            Game of Life patterns.
+            </summary>
+        </member>
+        <member name="T:kiswa.Games.Life.DataLayer.LifeGame">
+            <summary>
+            Game of Life simulator.
+            </summary>
+            <remarks>
+            This is a Cellular Automaton simulator which defaults to the rules
+            for Conway's Game of Life.
+            The universe is represented by an array of boolean values representing
+            cell states (true or false for 'alive' or 'dead').
+            When providing rules, use the format 'survival/birth' where Conway's
+            rules would be "23/3".  This means a living cell with 2 or 3 neighbors 
+            will 'survive' and a dead cell with 3 neighbors will be 'born'.
+            </remarks>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.Columns">
+            <summary>
+            Gets the number of columns in the grid.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.Rows">
+            <summary>
+            Gets the number of rows in the grid.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.Cells">
+            <summary>
+            Gets the number of cells in the grid.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.LiveCellCount">
+            <summary>
+            Gets the number of 'alive' cells.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.Rules">
+            <summary>
+            Gets the string representation of the current rules.
+            </summary>
+        </member>
+        <member name="P:kiswa.Games.Life.DataLayer.LifeGame.GameGrid">
+            <summary>
+            Gets the bool array current state of the simulation.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.#ctor(System.Int32)">
+            <summary>
+            Constructor for a Game of Life Simulator.
+            </summary>
+            <param name="gridSize">Size of one side of the grid - 
+            used for both to create a square grid.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor for a Game of Life Simulator.
+            </summary>
+            <param name="columns">Number of columns in the grid.</param>
+            <param name="rows">Number of rows in the grid.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Constructor for a Game of Life Simulator.
+            </summary>
+            <param name="columns">Number of columns in the grid.</param>
+            <param name="rows">Number of rows in the grid.</param>
+            <param name="rules">String representing the GoL ruleset to use
+            (e.g. "23/3" for Conway's Life).</param>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.ChangeRules(System.String)">
+            <summary>
+            Allows changing of ruleset.
+            </summary>
+            <param name="rules">String representing the ruleset to use.</param>
+            <remarks>When invalid rules are input, rules default to 23/3.</remarks>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.ClearGrid">
+            <summary>
+            Clears the grid.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.Randomize(System.Double)">
+            <summary>
+            Randomly creates live cells in the grid.
+            </summary>
+            <param name="probability">Probability of cell creation (0.0=all dead, 1.0=all alive).</param>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.ResetGrid">
+            <summary>
+            Resets the grid to the saved starting state.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.SetStart">
+            <summary>
+            Saves the grid state for reset.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.Step">
+            <summary>
+            Steps through one generation of the grid.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.GetCellState(System.Int32,System.Int32)">
+            <summary>
+            Gets the state of the specified cell.
+            </summary>
+            <param name="x">Column location of the cell to test.</param>
+            <param name="y">Row location of the cell to test.</param>
+            <returns>True or false for cell 'alive' or 'dead'.</returns>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.ToggleCellState(System.Int32,System.Int32)">
+            <summary>
+            Swaps the state of the specified cell.
+            </summary>
+            <param name="x">Column location of the cell to alter.</param>
+            <param name="y">Row location of the cell to alter.</param>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.ToString">
+            <summary>
+            Converts the grid to a string representation.
+            For 'dead' cells uses ".", for 'alive' cells uses "*".
+            </summary>
+            <returns>String representation of the grid.</returns>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.advancePopulation">
+            <summary>
+            Advances the entire population by one generation.
+            </summary>
+        </member>
+        <member name="M:kiswa.Games.Life.DataLayer.LifeGame.getNeighbors(System.Int32,System.Int32)">
+            <summary>
+            Gets the count of live neighbors for a specified cell.
+            </summary>
+            <param name="x">Column location of the cell to test.</param>
+            <param name="y">Row location of the cell to test.</param>
+            <returns>Integer value of live neighbors.</returns>
+        </member>
+    </members>
+</doc>

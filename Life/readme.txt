@@ -1,0 +1,1 @@
+Game of Life pøevzatá z http://www.codeproject.com/Articles/42236/Game-of-Life-Simulator-as-Learning-Tool
