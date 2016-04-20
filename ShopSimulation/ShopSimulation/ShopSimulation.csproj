@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kalendar.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Oddeleni.cs" />
+    <Compile Include="Proces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmeryJizdy.cs" />
+    <Compile Include="TypUdalosti.cs" />
+    <Compile Include="Udalost.cs" />
+    <Compile Include="Vytah.cs" />
+    <Compile Include="Zakaznik.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
