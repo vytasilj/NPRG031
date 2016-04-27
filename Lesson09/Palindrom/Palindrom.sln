@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom", "Palindrom\Palindrom.csproj", "{B2C8D255-5309-4419-8FD7-0F5F9F66E23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom.Console", "Palindrom.Console\Palindrom.Console.csproj", "{0A4AB385-26DB-4FB2-A6DF-970DE06EBC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom.Tests", "Palindrom.Tests\Palindrom.Tests.csproj", "{8174A56C-AF59-40EB-9A72-076EAFB32828}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2C8D255-5309-4419-8FD7-0F5F9F66E23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C8D255-5309-4419-8FD7-0F5F9F66E23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C8D255-5309-4419-8FD7-0F5F9F66E23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C8D255-5309-4419-8FD7-0F5F9F66E23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4AB385-26DB-4FB2-A6DF-970DE06EBC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4AB385-26DB-4FB2-A6DF-970DE06EBC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4AB385-26DB-4FB2-A6DF-970DE06EBC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4AB385-26DB-4FB2-A6DF-970DE06EBC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8174A56C-AF59-40EB-9A72-076EAFB32828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8174A56C-AF59-40EB-9A72-076EAFB32828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8174A56C-AF59-40EB-9A72-076EAFB32828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8174A56C-AF59-40EB-9A72-076EAFB32828}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
