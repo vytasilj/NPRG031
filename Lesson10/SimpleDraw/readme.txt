@@ -1,0 +1,1 @@
+Kód pøevzat z http://www.dreamincode.net/forums/topic/67275-the-wonders-of-systemdrawinggraphics/
